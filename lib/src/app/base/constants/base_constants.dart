@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 List<String> _labels = [
   'Produtos',
-  'Meus favoritos',
+  'Favoritos',
   'Carrinho',
   'Histórico',
 ];
