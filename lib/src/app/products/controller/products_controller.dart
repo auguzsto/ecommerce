@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 
-class ProductsController extends ChangeNotifier {
+class SegmentsController extends ChangeNotifier {
   //Segments controller
-  Set<dynamic> selectedSegments = {'Em destaques'};
-  void changeSelected(Set<dynamic> value) {
-    selectedSegments = value;
+  Set<int> selectedSegments = {0};
+  void changeSelected(Set<dynamic>? segments) {
+    selectedSegments = {segments!.first};
+    notifyListeners();
+  }
+
+  //Segments pages
+  final pageController = PageController();
+  void changePages(int index) {
+    pageController.jumpToPage(index);
     notifyListeners();
   }
 }

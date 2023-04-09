@@ -4,20 +4,21 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class SegmentsCustom extends StatelessWidget {
-  const SegmentsCustom({super.key});
+  SegmentsCustom({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final productsController = Provider.of<ProductsController>(context);
+    final segmentsController = Provider.of<SegmentsController>(context);
     return SegmentedButton(
       segments: List.generate(
         ProductsConstants.segments.length,
         (index) => ProductsConstants.segments[index],
       ),
       onSelectionChanged: (value) {
-        productsController.changeSelected(value);
+        segmentsController.changePages(value.first);
+        segmentsController.changeSelected(value);
       },
-      selected: productsController.selectedSegments,
+      selected: segmentsController.selectedSegments,
     );
   }
 }

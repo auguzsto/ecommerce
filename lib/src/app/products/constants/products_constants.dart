@@ -1,21 +1,25 @@
 import 'package:flutter/material.dart';
 
 List<ButtonSegment> _segments = [
-  ButtonSegment(
-    label: Text('Em destaques'),
-    value: 'Em destaques',
+  const ButtonSegment(
+    icon: Icon(Icons.price_change),
+    label: Text('Destaques'),
+    value: 0,
   ),
-  ButtonSegment(
-    label: Text('Oferta do dia'),
-    value: 'Oferta do dia',
+  const ButtonSegment(
+    icon: Icon(Icons.price_change),
+    label: Text('Ofertas'),
+    value: 1,
   ),
-  ButtonSegment(
+  const ButtonSegment(
+    icon: Icon(Icons.price_change),
     label: Text('Relevância'),
-    value: 'Relevância',
+    value: 2,
   ),
-  ButtonSegment(
+  const ButtonSegment(
+    icon: Icon(Icons.price_change),
     label: Text('Cupons'),
-    value: 'Cupons',
+    value: 3,
   ),
 ];
 

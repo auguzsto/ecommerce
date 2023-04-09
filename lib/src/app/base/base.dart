@@ -25,11 +25,11 @@ class BasePage extends StatelessWidget {
       //Pages bottom navigation.
       body: PageView(
         controller: pageController,
-        children: const [
+        children: [
           ProductsPage(),
-          Text('Promo price'),
-          Text('Car'),
-          Text('History'),
+          const Text('Promo price'),
+          const Text('Car'),
+          const Text('History'),
         ],
       ),
 

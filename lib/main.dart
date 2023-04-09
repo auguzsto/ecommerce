@@ -13,8 +13,8 @@ void main() {
           create: (context) => BaseController(),
         ),
         //Products
-        ChangeNotifierProvider<ProductsController>(
-          create: (context) => ProductsController(),
+        ChangeNotifierProvider<SegmentsController>(
+          create: (context) => SegmentsController(),
         ),
       ],
       child: const AppWidget(),
