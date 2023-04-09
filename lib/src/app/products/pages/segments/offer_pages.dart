@@ -9,7 +9,7 @@ class OffersProductsPages extends StatelessWidget {
     return GridView.count(
       crossAxisCount: 2,
       children: List.generate(
-        products.where((element) => element.priceOffer != 0).length,
+        products.takeWhile((element) => element.priceOffer! > 0).length,
         (index) => Card(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -42,7 +42,7 @@ class OffersProductsPages extends StatelessWidget {
                 color: Colors.blue,
               ),
 
-              Text(products[index].price!.toString()),
+              Text(products[index].priceOffer!.toString()),
             ],
           ),
         ),
