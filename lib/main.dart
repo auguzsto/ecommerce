@@ -1,4 +1,5 @@
 import 'package:ecommerce/src/app/base/controllers/base_controller.dart';
+import 'package:ecommerce/src/app/products/controller/iconfavotire_controller.dart';
 import 'package:ecommerce/src/app/products/controller/segments_controller.dart';
 import 'package:ecommerce/src/shared/app_widget.dart';
 import 'package:provider/provider.dart';
@@ -15,6 +16,9 @@ void main() {
         //Products
         ChangeNotifierProvider<SegmentsController>(
           create: (context) => SegmentsController(),
+        ),
+        ChangeNotifierProvider<IconFavotireController>(
+          create: (context) => IconFavotireController(),
         ),
       ],
       child: const AppWidget(),

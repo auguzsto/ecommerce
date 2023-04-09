@@ -1,3 +1,4 @@
+import 'package:ecommerce/src/app/products/widgets/iconfavorite_custom.dart';
 import 'package:ecommerce/src/shared/databases/products.dart';
 import 'package:ecommerce/src/shared/services/util_services.dart';
 import 'package:flutter/material.dart';
@@ -30,10 +31,7 @@ class SegmentsViewCustom extends StatelessWidget {
                     ),
 
                     //Favorite icon
-                    Icon(
-                      Icons.favorite,
-                      color: Colors.grey.shade300,
-                    ),
+                    const IconFavoriteCustom(),
                   ],
                 ),
               ),
