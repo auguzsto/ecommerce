@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 List<ButtonSegment> _segments = [
   const ButtonSegment(
     icon: Icon(Icons.price_change),
-    label: Text('Destaques'),
+    label: Text('Recentes'),
     value: 0,
   ),
   const ButtonSegment(
@@ -13,7 +13,7 @@ List<ButtonSegment> _segments = [
   ),
   const ButtonSegment(
     icon: Icon(Icons.price_change),
-    label: Text('Relevância'),
+    label: Text('Destaques'),
     value: 2,
   ),
   const ButtonSegment(

@@ -27,9 +27,9 @@ class ProductsPage extends StatelessWidget {
               child: PageView(
                 controller: segmentsController.pageController,
                 children: const [
-                  Text('Destaques'),
+                  Text('Recentes'),
                   OffersProductsPages(),
-                  Text('Revelância'),
+                  Text('Destaques'),
                   Text('Cupons'),
                 ],
               ),
