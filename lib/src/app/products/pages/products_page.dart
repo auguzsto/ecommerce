@@ -26,11 +26,11 @@ class ProductsPage extends StatelessWidget {
               padding: const EdgeInsets.only(left: 8, right: 8),
               child: PageView(
                 controller: segmentsController.pageController,
-                children: const [
-                  Text('Recentes'),
+                children: [
+                  const Text('Recentes'),
                   SegmentsViewCustom(),
-                  Text('Destaques'),
-                  Text('Cupons'),
+                  const Text('Destaques'),
+                  const Text('Cupons'),
                 ],
               ),
             ),

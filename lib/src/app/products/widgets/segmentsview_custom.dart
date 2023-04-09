@@ -1,8 +1,11 @@
 import 'package:ecommerce/src/shared/databases/products.dart';
+import 'package:ecommerce/src/shared/services/util_services.dart';
 import 'package:flutter/material.dart';
 
 class SegmentsViewCustom extends StatelessWidget {
-  const SegmentsViewCustom({super.key});
+  SegmentsViewCustom({super.key});
+
+  final utilService = UtilService();
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +45,7 @@ class SegmentsViewCustom extends StatelessWidget {
                 color: Colors.blue,
               ),
 
-              Text(products[index].priceOffer!.toString()),
+              Text(utilService.convertToBRL(products[index].priceOffer!)),
             ],
           ),
         ),
