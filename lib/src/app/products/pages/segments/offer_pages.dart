@@ -1,15 +1,15 @@
 import 'package:ecommerce/src/shared/databases/products.dart';
 import 'package:flutter/material.dart';
 
-class HighProductsPages extends StatelessWidget {
-  const HighProductsPages({super.key});
+class OffersProductsPages extends StatelessWidget {
+  const OffersProductsPages({super.key});
 
   @override
   Widget build(BuildContext context) {
     return GridView.count(
       crossAxisCount: 2,
       children: List.generate(
-        products.length,
+        products.where((element) => element.priceOffer != 0).length,
         (index) => Card(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,

@@ -1,11 +1,11 @@
 import 'package:ecommerce/src/app/products/controller/segments_controller.dart';
-import 'package:ecommerce/src/app/products/pages/segments/high_pages.dart';
+import 'package:ecommerce/src/app/products/pages/segments/offer_pages.dart';
 import 'package:ecommerce/src/app/products/widgets/segments_custom.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class ProductsPage extends StatelessWidget {
-  ProductsPage({super.key});
+  const ProductsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,14 +22,17 @@ class ProductsPage extends StatelessWidget {
 
           //Pages segments
           Expanded(
-            child: PageView(
-              controller: segmentsController.pageController,
-              children: [
-                HighProductsPages(),
-                Text('Ofertas'),
-                Text('Revelância'),
-                Text('Cupons'),
-              ],
+            child: Padding(
+              padding: const EdgeInsets.only(left: 8, right: 8),
+              child: PageView(
+                controller: segmentsController.pageController,
+                children: const [
+                  Text('Destaques'),
+                  OffersProductsPages(),
+                  Text('Revelância'),
+                  Text('Cupons'),
+                ],
+              ),
             ),
           ),
         ],

@@ -6,7 +6,7 @@ List<ProductsModel> _products = [
       name: 'Tênis Nike',
       description: 'Tênis maneiro',
       price: 399.98,
-      priceOffer: 329.99),
+      priceOffer: 0),
   ProductsModel(
       id: 2,
       name: 'Tênis Adidas',
@@ -24,7 +24,7 @@ List<ProductsModel> _products = [
       name: 'Tênis Vans',
       description: 'Tênis maneiro',
       price: 399.98,
-      priceOffer: 329.99),
+      priceOffer: 0),
   ProductsModel(
       id: 4,
       name: 'Tênis Vans',

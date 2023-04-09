@@ -1,6 +1,7 @@
 import 'package:ecommerce/src/app/base/constants/base_constants.dart';
 import 'package:ecommerce/src/app/base/controllers/base_controller.dart';
 import 'package:ecommerce/src/app/drawer/drawer.dart';
+import 'package:ecommerce/src/app/products/controller/segments_controller.dart';
 import 'package:ecommerce/src/app/products/pages/products_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -11,6 +12,8 @@ class BasePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final baseController = Provider.of<BaseController>(context);
+    final segmentsController = Provider.of<SegmentsController>(context);
+
     final pageController = PageController();
 
     return Scaffold(
@@ -39,6 +42,7 @@ class BasePage extends StatelessWidget {
         onTap: (value) {
           baseController.changePage(value);
           pageController.jumpToPage(value);
+          segmentsController.selectedSegments = {0};
         },
         currentIndex: baseController.baseIndex,
         items: List.generate(
