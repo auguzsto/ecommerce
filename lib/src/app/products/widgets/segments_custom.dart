@@ -1,10 +1,10 @@
 import 'package:ecommerce/src/app/products/constants/products_constants.dart';
-import 'package:ecommerce/src/app/products/controller/products_controller.dart';
+import 'package:ecommerce/src/app/products/controller/segments_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class SegmentsCustom extends StatelessWidget {
-  SegmentsCustom({super.key});
+  const SegmentsCustom({super.key});
 
   @override
   Widget build(BuildContext context) {

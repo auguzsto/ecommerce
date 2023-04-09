@@ -12,7 +12,7 @@ List<ProductsModel> _products = [
       name: 'Tênis Adidas',
       description: 'Tênis maneiro',
       price: 399.98,
-      priceOffer: 329.99),
+      priceOffer: 0),
   ProductsModel(
       id: 3,
       name: 'Tênis Puma',
