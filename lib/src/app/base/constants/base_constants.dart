@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 List<String> _labels = [
-  'Ofertas do dia',
-  'Menor preço',
+  'Produtos',
+  'Meus favoritos',
   'Carrinho',
   'Histórico',
 ];
 List<IconData> _icons = [
-  Icons.price_change,
-  Icons.price_check,
+  Icons.shopping_bag,
+  Icons.favorite,
   Icons.shopping_cart,
   Icons.history,
 ];

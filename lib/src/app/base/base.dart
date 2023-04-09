@@ -1,6 +1,7 @@
 import 'package:ecommerce/src/app/base/constants/base_constants.dart';
 import 'package:ecommerce/src/app/base/controllers/base_controller.dart';
 import 'package:ecommerce/src/app/drawer/drawer.dart';
+import 'package:ecommerce/src/app/products/pages/products_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -19,13 +20,13 @@ class BasePage extends StatelessWidget {
       ),
 
       //Navigation menu drawer.
-      drawer: DrawerCustom(),
+      drawer: const DrawerCustom(),
 
       //Pages bottom navigation.
       body: PageView(
         controller: pageController,
         children: const [
-          Text('Offer day'),
+          ProductsPage(),
           Text('Promo price'),
           Text('Car'),
           Text('History'),
