@@ -1,9 +1,12 @@
-class ProductsModel {
-  int? id;
+import 'package:flutter/material.dart';
+
+class ProductsModel extends ChangeNotifier {
+  String? id;
   String? name;
   String? description;
   double? price;
   double? priceOffer;
+  String? idUser;
 
   ProductsModel({
     this.id,
@@ -11,6 +14,7 @@ class ProductsModel {
     this.description,
     this.price,
     this.priceOffer,
+    this.idUser,
   });
 
   factory ProductsModel.fromMap(Map<String, dynamic> map) {
@@ -20,6 +24,7 @@ class ProductsModel {
       description: map['description'],
       price: map['price'],
       priceOffer: map['priceOffer'],
+      idUser: map['idUser'],
     );
   }
 
@@ -30,6 +35,7 @@ class ProductsModel {
       "description": description,
       "price": price,
       "priceOffer": priceOffer,
+      "idUser": idUser,
     };
   }
 }
