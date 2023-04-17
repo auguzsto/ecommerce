@@ -12,15 +12,18 @@ class AuthRepository {
     final HttpClient httpClient = HttpClient();
 
     final response = await http.post(
-      Uri.parse("${httpClient.baseUrl}/auth"),
-      body: {
+      Uri.parse("http://localhost:8080/auth"),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: jsonEncode({
         "username": username,
         "password": password,
-      },
+      }),
     );
 
     if (response.statusCode == 200) {
-      AuthModel authModel = AuthModel.fromMap(jsonDecode(response.body));
+      final authModel = AuthModel.fromMap(jsonDecode(response.body));
     }
   }
 }
