@@ -1,4 +1,5 @@
 import 'package:ecommerce/src/app/auth/constants/signin_constants.dart';
+import 'package:ecommerce/src/app/auth/controller/auth_controller.dart';
 import 'package:ecommerce/src/shared/widgets/text_form_custom.dart';
 import 'package:flutter/material.dart';
 
@@ -9,6 +10,8 @@ class SignInPage extends StatelessWidget {
     SignInConstants.label.length,
     (index) => TextEditingController(),
   );
+
+  final authController = AuthController();
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +45,11 @@ class SignInPage extends StatelessWidget {
           SizedBox(
             height: 180,
             child: ElevatedButton.icon(
-              onPressed: () {},
+              onPressed: () async {
+                await authController.signIn(
+                    username: controllers[0].text,
+                    password: controllers[1].text);
+              },
               icon: const Icon(Icons.login),
               label: const Text("Entrar"),
             ),
