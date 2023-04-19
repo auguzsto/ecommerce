@@ -1,4 +1,5 @@
 import 'package:ecommerce/src/app/auth/pages/signin_page.dart';
+import 'package:ecommerce/src/app/base/base.dart';
 import 'package:ecommerce/src/theme/themes.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +11,7 @@ class AppWidget extends StatelessWidget {
     return MaterialApp(
       theme: primaryTheme,
       debugShowCheckedModeBanner: false,
-      home: SignInPage(),
+      home: const BasePage(),
     );
   }
 }

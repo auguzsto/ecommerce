@@ -1,42 +1,42 @@
-import 'package:ecommerce/src/app/products/models/products_model.dart';
+import 'package:ecommerce/src/app/items/models/items_model.dart';
 
-List<ProductsModel> _products = [
-  ProductsModel(
+List<ItemsModel> _products = [
+  ItemsModel(
     id: "1",
     name: 'Tênis Nike',
     description: 'Tênis maneiro',
     price: 399.98,
     priceOffer: 320,
   ),
-  ProductsModel(
+  ItemsModel(
     id: "2",
     name: 'Tênis Adidas',
     description: 'Tênis maneiro',
     price: 399.98,
     priceOffer: 390,
   ),
-  ProductsModel(
+  ItemsModel(
     id: "3",
     name: 'Tênis Puma',
     description: 'Tênis maneiro',
     price: 399.98,
     priceOffer: 188.89,
   ),
-  ProductsModel(
+  ItemsModel(
     id: "3",
     name: 'Tênis Vans',
     description: 'Tênis maneiro',
     price: 399.98,
     priceOffer: 266.55,
   ),
-  ProductsModel(
+  ItemsModel(
     id: "4",
     name: 'Tênis Vans',
     description: 'Tênis maneiro',
     price: 399.98,
     priceOffer: 370,
   ),
-  ProductsModel(
+  ItemsModel(
     id: "5",
     name: 'Tênis Misuno',
     description: 'Tênis maneiro',
@@ -45,4 +45,4 @@ List<ProductsModel> _products = [
   ),
 ];
 
-List<ProductsModel> get products => _products;
+List<ItemsModel> get products => _products;

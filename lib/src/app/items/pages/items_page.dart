@@ -1,11 +1,11 @@
-import 'package:ecommerce/src/app/products/controller/segments_controller.dart';
-import 'package:ecommerce/src/app/products/widgets/segmentsview_custom.dart';
-import 'package:ecommerce/src/app/products/widgets/segments_custom.dart';
+import 'package:ecommerce/src/app/items/controller/segments_controller.dart';
+import 'package:ecommerce/src/app/items/widgets/segmentsview_custom.dart';
+import 'package:ecommerce/src/app/items/widgets/segments_custom.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class ProductsPage extends StatelessWidget {
-  const ProductsPage({super.key});
+class ItemsPage extends StatelessWidget {
+  const ItemsPage({super.key});
 
   @override
   Widget build(BuildContext context) {

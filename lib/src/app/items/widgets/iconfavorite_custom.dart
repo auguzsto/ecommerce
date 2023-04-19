@@ -1,4 +1,4 @@
-import 'package:ecommerce/src/app/products/controller/iconfavotire_controller.dart';
+import 'package:ecommerce/src/app/items/controller/iconfavotire_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

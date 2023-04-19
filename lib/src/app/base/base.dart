@@ -1,8 +1,8 @@
 import 'package:ecommerce/src/app/base/constants/base_constants.dart';
 import 'package:ecommerce/src/app/base/controllers/base_controller.dart';
 import 'package:ecommerce/src/app/drawer/drawer.dart';
-import 'package:ecommerce/src/app/products/controller/segments_controller.dart';
-import 'package:ecommerce/src/app/products/pages/products_page.dart';
+import 'package:ecommerce/src/app/items/controller/segments_controller.dart';
+import 'package:ecommerce/src/app/items/pages/items_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -29,7 +29,7 @@ class BasePage extends StatelessWidget {
       body: PageView(
         controller: pageController,
         children: const [
-          ProductsPage(),
+          ItemsPage(),
           Text('Promo price'),
           Text('Car'),
           Text('History'),

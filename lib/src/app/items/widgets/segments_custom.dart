@@ -1,5 +1,5 @@
-import 'package:ecommerce/src/app/products/constants/products_constants.dart';
-import 'package:ecommerce/src/app/products/controller/segments_controller.dart';
+import 'package:ecommerce/src/app/items/constants/items_constants.dart';
+import 'package:ecommerce/src/app/items/controller/segments_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
