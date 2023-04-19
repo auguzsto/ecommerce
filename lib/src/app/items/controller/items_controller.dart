@@ -7,4 +7,8 @@ class ItemsController extends ChangeNotifier {
   Future<List> all() async {
     return itemsRepository.all();
   }
+
+  Future<List> findById(String id) async {
+    return itemsRepository.findById(id);
+  }
 }

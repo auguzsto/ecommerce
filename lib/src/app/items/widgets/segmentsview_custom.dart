@@ -31,7 +31,7 @@ class SegmentsViewCustom extends StatelessWidget {
               return GestureDetector(
                 onTap: () => RouteService.to(
                   context,
-                  ItemPage(itemsModel: itemsModel),
+                  ItemPage(itemId: itemsModel.id),
                 ),
                 child: Card(
                   child: Row(

@@ -9,16 +9,18 @@ class SegmentsCustom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final segmentsController = Provider.of<SegmentsController>(context);
-    return SegmentedButton(
-      segments: List.generate(
-        ProductsConstants.segments.length,
-        (index) => ProductsConstants.segments[index],
+    return SizedBox(
+      child: SegmentedButton(
+        segments: List.generate(
+          ProductsConstants.segments.length,
+          (index) => ProductsConstants.segments[index],
+        ),
+        onSelectionChanged: (value) {
+          segmentsController.changePages(value.first);
+          segmentsController.changeSelected(value);
+        },
+        selected: segmentsController.selectedSegments,
       ),
-      onSelectionChanged: (value) {
-        segmentsController.changePages(value.first);
-        segmentsController.changeSelected(value);
-      },
-      selected: segmentsController.selectedSegments,
     );
   }
 }

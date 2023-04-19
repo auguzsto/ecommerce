@@ -4,10 +4,10 @@ class ItemsRepository {
   final client = HttpClient();
 
   Future<List> all() async {
-    return client.all(table: "item");
+    return await client.all(table: "item");
   }
 
   Future<List> findById(String id) async {
-    return client.all(table: "item", column: "id=$id");
+    return await client.all(table: "item", column: "id=$id");
   }
 }
