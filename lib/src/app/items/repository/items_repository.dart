@@ -6,4 +6,8 @@ class ItemsRepository {
   Future<List> all() async {
     return client.all(table: "item");
   }
+
+  Future<List> findById(String id) async {
+    return client.all(table: "item", column: "id=$id");
+  }
 }
