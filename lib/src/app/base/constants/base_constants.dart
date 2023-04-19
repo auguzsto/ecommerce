@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 List<String> _labels = [
   'Cardápio',
   'Favoritos',
-  'Pedidos',
+  'Carrinho',
   'Histórico',
 ];
 List<IconData> _icons = [

@@ -27,10 +27,9 @@ class ItemsPage extends StatelessWidget {
               child: PageView(
                 controller: segmentsController.pageController,
                 children: [
-                  const Text('Recentes'),
-                  SegmentsViewCustom(),
+                  const Text('Mais pedidos'),
                   const Text('Destaques'),
-                  const Text('Cupons'),
+                  SegmentsViewCustom(),
                 ],
               ),
             ),

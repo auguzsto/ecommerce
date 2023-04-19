@@ -11,6 +11,11 @@ List<ButtonSegment> _segments = [
     label: Text('Destaques'),
     value: 1,
   ),
+  const ButtonSegment(
+    icon: Icon(Icons.price_change),
+    label: Text('Todos'),
+    value: 2,
+  ),
 ];
 
 abstract class ProductsConstants {
